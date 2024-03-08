@@ -1,0 +1,136 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #FFFAED;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color:#96DAEA;
+}
+
+header div {
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-top: #FFFAED 4px solid;
+    background-color: #96DAEA;
+}
+
+nav a {
+    color: #FFFAED;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 25px;
+    letter-spacing: -2px;
+}
+
+nav a:hover {
+    transition: 0.25s;
+    color: #745E45;
+}
+
+path:hover {
+    transition: 0.25s;
+    fill: #745E45;
+}
+
+.bag {
+    position: absolute;
+    width: 40px;
+    margin-left: 90vw;
+}
+
+.homeBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content {
+    margin: -20px 20px;
+}
+
+h1 {
+    margin: 50px 0px 0px 20px;
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: -2.5px;
+}
+
+h2 {
+    float: right;
+    margin-right: 20px;;
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: -2.5px;
+}
+
+.featuredHeading {
+    width: 100%;
+}
+
+.featured {
+    transform: translateY(-20px);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.featuredItem {
+    margin: 20px;
+    background-color:#D0DCAC;
+    width: 581px;
+    height: 581px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    background-color: #745E45;
+    width: 100%;
+    height: 150px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFAED;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 25px;
+    letter-spacing: -1.5px;
+}
+
+footer a:hover {
+    transition: 0.25s;
+    color: #96DAEA;
+}
+
+footer img {
+    margin-left: 25px;
+    width: 30px;
+    height: 30px;
+}
