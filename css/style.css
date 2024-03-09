@@ -11,9 +11,15 @@ body {
     display: none;
   }
 
+#fixed {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
 header {
     display: flex;
-    height: 120px;
+    height: 80px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -21,12 +27,10 @@ header {
 }
 
 svg {
-    scale: 1.6;
-}
-
-path:hover {
-    transition: 0.25s;
-    fill: #745E45;
+    margin-top: 0.5vw;
+    width: 250px;
+    height: 41px; 
+    scale: 1.3;
 }
 
 header div {
@@ -34,9 +38,10 @@ header div {
 }
 
 nav {
+    margin-top: 80px;
     display: flex;
     width: 100%;
-    height: 60px;
+    height: 40px;
     justify-content: center;
     align-items: center;
     display: inline-block;
@@ -48,7 +53,7 @@ nav a {
     color: #FFFAED;
     text-decoration: none;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 1.5rem;
     margin: 0px 25px;
     letter-spacing: -2px;
 }
@@ -64,7 +69,7 @@ nav a:hover {
 
 #bag {
     position: absolute;
-    width: 60px;
+    width: 40px;
     margin-left: 90vw;
 }
 
@@ -80,7 +85,7 @@ nav a:hover {
     width: 100%;
 }
 
-#banner{
+#video{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,51 +95,60 @@ nav a:hover {
     background-image: url("/images/about.jpg");
     background-size: cover;
     background-position: center;
-    height: 1500px;
+    height: 1080px;
 }
+
+#galleryImage {
+    background-image: url("/images/gallery.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    height: 1080px;
+}
+
+#catalogImage {
+    background-image: url("/images/catalog.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 1080px;
+}
+
 
 h1 {
     position: absolute;
-    transform: translateY(730px);
+    transform: translateY(620px);
     color: #FFFAED;
-    font-size: 400px;
+    font-size: 15rem;
     font-weight: 900;
     letter-spacing: -9px;
 }
 
 h2 {
-    font-size: 80px;
+    margin: 2vw 1vw 0 1vw;
+    font-size: 4rem;
     font-weight: 900;
     letter-spacing: -2.5px;
-    margin-bottom: 10px;
 }
 
 p {
-    font-size: 24px;
+    font-size: 1.25rem;
 }
 
-.content {
-    margin: 50px 25px;
+section p {
+    margin: 0 1vw;
 }
 
 .featuredSection {
+    max-width: 100%;
     display: grid;
-    grid-template-columns: fit-content(100%) fit-content(100%) fit-content(100%) ;
-    column-gap: 40px;
-    row-gap: 40px;
-    transform: translateY(-20px);
-    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1vw;
+    margin: 0 1vw;
 }
 
-.featuredItem {;
+.featuredItem {
     background-color:#D0DCAC;
-    width: 31.6vw;
-    height: 31.6vw;
-}
-
-footer a:hover {
-    transition: 0.25s;
-    color: #96DAEA;
+    height: 31.9vw;
 }
 
 video {
@@ -143,15 +157,11 @@ video {
     object-fit: cover;
 }
 
-svg {
-    width: 250px;
-    height: 41px; 
-}
-
 #menu {
     display: none;
-    width: 35px;
-    height: 35px;
+    margin-top: 0.5vw;
+    width: 40px;
+    height: 40px;
 }
 
 footer {
@@ -167,10 +177,15 @@ footer {
 footer a {
     text-decoration: none;
     color: #FFFAED;
-    font-size: 32px;
+    font-size: 1.5rem;
     font-weight: 800;
     margin: 0 25px;
     letter-spacing: -1.5px;
+}
+
+footer a:hover {
+    transition: 0.25s;
+    color: #96DAEA;
 }
 
 footer img {
@@ -183,15 +198,16 @@ footer img {
 @media (max-width: 1440px) {
 
     header {
-        height: 80px;
+        height: 65px;
     }
     
     nav {
+        margin-top: 65px;
         height: 40px;
     }
     
     nav a {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     #navSection {
@@ -199,7 +215,7 @@ footer img {
     }
 
     svg {
-        scale: 1;
+        scale: 0.9;
     }
     
     #bag {
@@ -207,32 +223,25 @@ footer img {
         margin-left: 90vw;
     }
     
-    #banner, #aboutImage{
-        height: 810px;
+    #video, #aboutImage, #catalogImage, #galleryImage{
+        height: 600px;
     }
 
     h1 {
-        font-size: 200px;
-        transform: translateY(425px);
+        font-size: 10rem;
+        transform: translateY(295px);
     }
     
     h2 {
-        font-size: 64px;
+        font-size: 3rem
     }
 
     p {
-        font-size: 20px;
-    }
-
-    .featuredSection {
-        grid-template-columns: fit-content(100%) fit-content(100%) fit-content(100%);
-        column-gap: 20px;
-        row-gap: 20px;
+        font-size: 1.25rem;
     }
     
     .featuredItem {
-        width: 31.2vw;
-        height: 31.2vw;
+        height: 31.25vw;
     }
     
     footer {
@@ -240,7 +249,7 @@ footer img {
     }
     
     footer a {
-        font-size: 20px;
+        font-size: 1.25rem;
         margin: 25px;
     }
     
@@ -252,30 +261,11 @@ footer img {
 
 }
 
-/* ----- LAPTOP ----- */
-@media (max-width: 1024px) {
-
-    .featuredItem {
-        width: 30.3vw;
-        height:  30.3vw;
-    }
-
-    #banner, #aboutImage {
-        height: 575px;
-    }
-
-    h1 {
-        font-size: 180px;
-        transform: translateY(230px);
-    }
-
-}
-
 /* ----- TABLET ----- */
 @media (max-width: 768px) {
     
     header {
-        height: 80px;
+        height: 50px;
     }
 
     svg {
@@ -283,13 +273,14 @@ footer img {
     }
     
     nav {
+        margin-top: 50px;
         height: 35px;
         border-top: #FFFAED 3px solid;
     }
     
     nav a {
-        font-size: 16px;
-        margin: 0px 18px;
+        font-size: 1rem;
+        margin: 0px 10px;
     }
     
     #bag {
@@ -297,35 +288,30 @@ footer img {
         margin-left: 90vw;
     }
     
-    #banner, #aboutImage {
-        height: 432px;
+    #video, #aboutImage, #catalogImage, #galleryImage {
+        width: 100vw;
+        height: 400px;
     }
     
-    .content {
-        margin: 0px 20px;
-    }
-
     h1 {
-        font-size: 140px;
-        transform: translateY(165px);
+        font-size: 5.7rem;
+        transform: translateY(225px);
     }
     
     h2 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .featuredSection {
-        grid-template-columns: fit-content(100%) fit-content(100%);
-        column-gap: 10px;
-        row-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .featuredItem {
-        width: 46.6vw;
+        width: 48.3vw;
         height: 46.6vw;
     }
     
@@ -334,7 +320,7 @@ footer img {
     }
     
     footer a {
-        font-size: 18px;
+        font-size: 1rem;
         margin: 20px;
     }
     
@@ -349,7 +335,7 @@ footer img {
 @media (max-width:425px) {
 
     header {
-        height: 80px;
+        height: 70px;
     }
 
     header div {
@@ -364,8 +350,9 @@ footer img {
     }
 
     svg {
+        scale: 0.8;
         float: right;
-        transform: translateX(22.5px);
+        transform: translateX(5vw);
     }
     
     nav {
@@ -376,30 +363,27 @@ footer img {
         display: none;
     }
     
-    #banner, #aboutImage {
+    #video, #aboutImage, #catalogImage, #galleryImage {
         height: 250px;
-    }
-    
-    .content {
-        margin: 0px 10px;
     }
 
     h1 {
-        font-size: 80px;
+        font-size: 4rem;
         letter-spacing: -4px;
-        transform: translateY(100px);
+        transform: translateY(130px);
     }
 
     h2 {
-        font-size: 36px;
+        font-size: 2rem;
     }
 
     .featuredSection {
-        grid-template-columns: fit-content(100%);
+        grid-template-columns: repeat(1, 1fr);
     }
     
     .featuredItem {
-        width: 95.2vw;;
+        width: 98vw;
+        height: 98vw;
     }
     
     footer {
@@ -408,7 +392,7 @@ footer img {
     }
     
     footer a {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     
     footer img {
