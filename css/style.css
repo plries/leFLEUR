@@ -1,5 +1,10 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -7,15 +12,13 @@ body {
     background-color: #FFFAED;
 }
 
-::-webkit-scrollbar {
-    display: none;
-  }
-
 #fixed {
     z-index: 1;
     position: fixed;
     width: 100%;
 }
+
+/* ----- header ----- */
 
 header {
     display: flex;
@@ -85,6 +88,15 @@ nav a:hover {
     width: 100%;
 }
 
+#menu {
+    display: none;
+    margin-top: 0.5vw;
+    width: 40px;
+    height: 40px;
+}
+
+/* ----- banner ----- */
+
 #video{
     display: flex;
     justify-content: center;
@@ -113,7 +125,6 @@ nav a:hover {
     height: 1080px;
 }
 
-
 h1 {
     position: absolute;
     transform: translateY(620px);
@@ -123,11 +134,20 @@ h1 {
     letter-spacing: -9px;
 }
 
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ----- content ----- */
+
 h2 {
     margin: 2vw 1vw 0 1vw;
     font-size: 4rem;
     font-weight: 900;
     letter-spacing: -2.5px;
+    display: inline-block;
 }
 
 p {
@@ -137,6 +157,8 @@ p {
 section p {
     margin: 0 1vw;
 }
+
+/* ----- homepage ----- */
 
 .featuredSection {
     max-width: 100%;
@@ -151,18 +173,35 @@ section p {
     height: 31.9vw;
 }
 
-video {
-    height: 100%;
+/* ----- gallery ----- */
+    
+
+#collection1, #collection2, #collection3 {
     width: 100%;
-    object-fit: cover;
+    display: flex;
+    flex-wrap: nowrap;
+    grid-gap: 1vw;
+    overflow-x:auto;
 }
 
-#menu {
-    display: none;
-    margin-top: 0.5vw;
-    width: 40px;
-    height: 40px;
+.galleryPhoto {
+    flex: 0 0 auto;
+    background-color:#D0DCAC;
+    width: 28vw;
+    height: 35vw;
 }
+
+.galleryPhoto:nth-child(1) {
+    margin-left: 1vw
+}
+
+#scrollLeft1, #scrollRight1, #scrollLeft2, #scrollRight2, #scrollLeft3, #scrollRight3 {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+/* ----- footer ----- */
 
 footer {
     display: flex;
