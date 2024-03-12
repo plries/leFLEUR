@@ -8,12 +8,12 @@
 </head>
 <body>
 
-  <div id="fixed">
+  <div>
     <header>
       <div>
-        <img id="menu" src="/images/menu.png" alt="Menu">
+        <a href="#" onclick="toggleMenu()" ><svg id="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fffaed" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
         <svg id="logo" xmlns="http://www.w3.org/2000/svg" >
-          <a href="index.html"
+          <a href="index.html">
           <g clip-path="url(#clip0_254_332)">
             <path d="M0 0H13.6587V39.7352H0V0Z" fill="#FFFAED"></path>
             <path d="M28.2339 28.1309C28.2339 30.3764 28.6038 32.886 31.4646 32.886C32.8931 32.886 33.9516 31.8954 34.2192 30.5862H46.233C44.4347 37.276 38.1385 40.3607 31.6771 40.3607C22.835 40.3607 15.3701 35.8658 15.3701 26.2972C15.3701 17.0976 21.9338 11.3479 30.8822 11.3479C40.8892 11.3479 48.1415 17.7231 47.449 28.127H28.2339V28.1309ZM34.6402 22.3811C34.6402 20.5008 33.263 18.772 31.3033 18.772C29.2374 18.772 28.2339 20.4464 28.2339 22.3811H34.6402Z" fill="#FFFAED"></path>
@@ -26,17 +26,17 @@
           </g>
         </a>
         </div>
-            <img id="bag" src="/images/bag.png" alt="Shopping Bag">
+          <svg id="bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fffaed" d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
           </svg>
     </header>
   </div>
-    <nav>
-      <div id="navSection">
-        <a href="/html/about.html">about</a>
-        <a href="/html/gallery.html">gallery</a>
-        <a id="onPage" href="/html/catalog.html">catalog</a>
+    <nav id="nav">
+        <ul id="navSection">
+          <li><a href="/html/about.html">about</a></li>
+          <li><a href="/html/gallery.html">gallery</a></li>
+          <li><a id="onPage" href="/html/catalog.html">catalog</a></li>
+        </ul>
     </nav>
-
 
       <section>
           <div id="catalogImage"><h1>CATALOG</h1></div>
@@ -46,14 +46,14 @@
       <section class="content">
 
         <div id="catalogNav">
-          <a id="selected" href="">all</a>
-          <a href="">tops</a>
-          <a href="">bottoms</a>
-          <a href="">fragrance</a>
-          <a href="">nail polish</a>
-          <a href="">accessories</a>
-          <a href="">luggage</a>
-          <a href="">footwear</a>
+          <a href="../html/catalog.html#catalogNav"><p id="selected" >all</p></a>
+          <a href="../html/tops.html#catalogNav"><p>tops</p></a>
+          <a href="../html/bottoms.html#catalogNav"><p>bottoms</p></a>
+          <a href="../html/fragrances.html#catalogNav"><p>fragrance</p></a>
+          <a href="../html/nailpolish.html#catalogNav"><p>nail polish</p></a>
+          <a href="../html/accessories.html#catalogNav"><p>accessories</p></a>
+          <a href="../html/luggage.html#catalogNav"><p>luggage</p></a>
+          <a href="../html/footwear.html#catalogNav"><p>footwear</p></a>
         </div>
 
         <hr>
@@ -158,10 +158,12 @@
       </section>
 
       <footer>
-        <a href="">terms</a>
-        <a href="">privacy</a>
-        <a href=""><img src="/images/instagram.png" alt="Instagram"></a>
+        <a href="../html/terms.html">terms</a>
+        <a href="../html/privacy.html">privacy</a>
+        <a target="_blank" href="https://www.instagram.com/lefleur/"><svg #instagram xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="120px" height="120px"><g fill="#fffaed" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M9.99805,3c-3.859,0 -6.99805,3.14195 -6.99805,7.00195v10c0,3.859 3.14195,6.99805 7.00195,6.99805h10c3.859,0 6.99805,-3.14195 6.99805,-7.00195v-10c0,-3.859 -3.14195,-6.99805 -7.00195,-6.99805zM22,7c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM15,9c3.309,0 6,2.691 6,6c0,3.309 -2.691,6 -6,6c-3.309,0 -6,-2.691 -6,-6c0,-3.309 2.691,-6 6,-6zM15,11c-2.20914,0 -4,1.79086 -4,4c0,2.20914 1.79086,4 4,4c2.20914,0 4,-1.79086 4,-4c0,-2.20914 -1.79086,-4 -4,-4z"></path></g></g></svg></a>
       </footer>
+
+<script src="../js/app.js"></script>
 
 </body>
 </html>

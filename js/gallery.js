@@ -9,37 +9,37 @@ const buttonLeft3 = document.getElementById("scrollLeft3");
 
 scrollRight1 = () => {
 
-    document.getElementById("collection1").scrollLeft += 150;
+    document.getElementById("collection1").scrollLeft += 300;
 
 };
 
 scrollLeft1 = () => {
 
-    document.getElementById("collection1").scrollLeft -= 200;
+    document.getElementById("collection1").scrollLeft -= 300;
 
 };
 
 scrollRight2 = () => {
 
-    document.getElementById("collection2").scrollLeft += 200;
+    document.getElementById("collection2").scrollLeft += 300;
 
 };
 
 scrollLeft2 = () => {
 
-    document.getElementById("collection2").scrollLeft -= 200;
+    document.getElementById("collection2").scrollLeft -= 300;
 
 };
 
 scrollRight3 = () => {
 
-    document.getElementById("collection3").scrollLeft += 200;
+    document.getElementById("collection3").scrollLeft += 300;
 
 };
 
 scrollLeft3 = () => {
 
-    document.getElementById("collection3").scrollLeft -= 200;
+    document.getElementById("collection3").scrollLeft -= 300;
 
 };
 

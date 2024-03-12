@@ -1,8 +1,8 @@
-const menu = document.getElementById("navSection");
+const menu = document.getElementById("nav");
 
 function toggleMenu() {
-
-    menu.classList.toggle("show");
-    console.log("yo");
+        
+    menu.classList.toggle("toggleMenu");
 
 };
+
