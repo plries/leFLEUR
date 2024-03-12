@@ -426,7 +426,12 @@ footer svg {
     }
 
     #catalogNav {
-        margin: 2vw 0 -0.5vw 0;
+        height: 4vw;
+        margin: 3vw 0 2vw 0;
+    }
+
+    .filteredSection {
+        margin-top: 9.3vw;
     }
 
     #scrollLeft1, #scrollRight1, #scrollLeft2, #scrollRight2, #scrollLeft3, #scrollRight3 {
@@ -543,7 +548,12 @@ footer svg {
     }
 
     #catalogNav {
+        height: 8vw;
         margin: 3vw 0 2vw 0;
+    }
+
+    .filteredSection {
+        margin-top: 12.5vw;
     }
     
     footer {
