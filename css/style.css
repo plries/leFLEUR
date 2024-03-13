@@ -63,16 +63,20 @@ nav a {
     font-size: 1.75rem;
     margin: 0px 25px;
     letter-spacing: -2px;
+    transition: color 0.25s;
 }
 
 nav a:hover {
-    transition: 0.25s;
     color: #745E45;
 }
 
-#onPage {
-    color: #745E45;
+svg path{
+    transition: fill 0.25s;
 }
+
+svg:hover path {
+    fill:#745E45;
+  }
 
 #bag {
     position: absolute;
@@ -252,6 +256,14 @@ section p {
     margin-top: auto;
 }
 
+#catalogNav a p {
+    transition: color 0.25s;
+}
+
+#catalogNav a:hover p {
+    color: #745E45;
+}
+
 #selected {
     font-weight: bold;
     color: #000000;
@@ -278,26 +290,31 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #FFFAED;
+    color: #000000;
     font-size: 1.5rem;
     font-weight: 800;
     margin: 0 25px;
     letter-spacing: -1.5px;
-}
+    transition: color 0.25s;
+}   
 
 footer a:hover{
-    transition: 0.25s;
     color: #96DAEA;
 }
 
-footer a g:hover {
-    fill: #96DAEA;
-}
-
-footer svg {
+footer svg{
     margin-top: 10px;
     width: 30px;
     height: 30px;
+    transition: color 0.25s;
+}
+
+footer svg path {
+    fill: #FFFAED;
+}
+
+footer svg:hover path{
+    fill: #96DAEA;
 }
 
 /* ----- DESKTOP ----- */
@@ -350,6 +367,10 @@ footer svg {
 
     p {
         font-size: 1rem;
+    }
+
+    #catalogNav {
+        height: 6vw;
     }
 
     footer {
