@@ -159,7 +159,7 @@ h2 {
     display: inline-block;
 }
 
-p, #catalogNav a {
+p {
     color: black;
     font-size: 1.5rem;
 }
@@ -224,7 +224,7 @@ section p {
 .catalogSection {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     gap: 1vw;
     margin: 0 1vw;
 }
@@ -237,7 +237,7 @@ section p {
 
 #catalogNav {
     margin: 0 0 -1vw 0;
-    height: 5vw;
+    height: 3vw;
     width: calc(100% - 1vw);
     display: flex;
     white-space: nowrap;
@@ -247,16 +247,12 @@ section p {
 }
 
 #catalogNav button {
+    z-index: 5;
     height: fit-content;
     width: fit-content;
-    margin-top: 4vw;
     border: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: transparent;
-}
-
-#catalogNav button:hover {
-    color: #745E45;
 }
 
 #catalogNav button:nth-child(1) {
@@ -271,6 +267,10 @@ section p {
 
 #catalogNav button{
     transition: color 0.25s;
+}
+
+#catalogNav button:focus {
+    font-weight: bold;
 }
 
 .show {
@@ -378,7 +378,11 @@ footer svg:hover path{
     }
 
     #catalogNav {
-        height: 8vw;
+        height: 5vw;
+    }
+
+    #catalogNav button {
+        font-size: 1rem;
     }
 
     footer {
@@ -455,13 +459,8 @@ footer svg:hover path{
     }
 
     #catalogNav {
-        height: 4vw;
-        margin: 3vw 0 2vw 0;
+        height: 6vw;
     }
-
-    /* .filteredSection {
-        margin-top: 9.3vw;
-    } */
 
     #scrollLeft1, #scrollRight1, #scrollLeft2, #scrollRight2, #scrollLeft3, #scrollRight3 {
         display: none;
