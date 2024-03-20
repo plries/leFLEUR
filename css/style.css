@@ -500,6 +500,10 @@ footer svg:hover path{
         transform: translateX(5px);
     }
 
+    svg:hover path {
+        fill:#FFFAED;
+    }
+
     svg {
         scale: 0.8;
         float: right;
@@ -535,7 +539,7 @@ footer svg:hover path{
     }
 
     nav.toggleMenu {
-        height: 38vw;
+        height: 165px;
     }
     
     #bag {
@@ -599,6 +603,11 @@ footer svg:hover path{
     /* .filteredSection {
         margin-top: 12.5vw;
     } */
+
+    .galleryPhoto{
+        width: 42vw;
+        height: 49vw;
+    }
     
     footer {
         flex-direction: column;
